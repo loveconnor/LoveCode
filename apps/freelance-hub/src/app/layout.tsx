@@ -10,8 +10,14 @@ const departureFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "AI SDK Tools Example",
-  description: "Example application using AI SDK Tools",
+  title: "Freelance Hub – Contractor Control Room",
+  description:
+    "Coordinate freelancers and contractors, monitor live projects, and trigger payouts from a single control room.",
+  icons: {
+    icon: [
+      { url: "/heart-favicon.svg", type: "image/svg+xml", sizes: "any" },
+    ],
+  },
 };
 
 export default function RootLayout({
