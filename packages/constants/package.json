@@ -1,0 +1,38 @@
+{
+    "name": "@fluxly/constants",
+    "description": "Common constants shared between Fluxly packages",
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fluxly-dev/fluxly.git"
+    },
+    "type": "module",
+    "main": "src/index.ts",
+    "scripts": {
+        "clean": "rm -rf node_modules",
+        "lint": "eslint . --max-warnings 0",
+        "format": "eslint --fix .",
+        "typecheck": "tsc --noEmit"
+    },
+    "keywords": [
+        "Fluxly",
+        "constants"
+    ],
+    "author": {
+        "name": "Fluxly",
+        "email": "contact@fluxly.com"
+    },
+    "license": "Apache-2.0",
+    "homepage": "https://fluxly.com",
+    "exports": {
+        ".": "./src/index.ts",
+        "./*": "./src/*/index.ts"
+    },
+    "devDependencies": {
+        "@fluxly/eslint": "*",
+        "@fluxly/typescript": "*",
+        "eslint": "^9.0.0",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {}
+}

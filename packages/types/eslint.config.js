@@ -1,0 +1,4 @@
+import baseConfig from "@fluxly/eslint/base";
+
+/** @type {import('typescript-eslint').Config} */
+export default [...baseConfig];

@@ -1,0 +1,25 @@
+html,
+body {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+/* Keep navbar persistent */
+.top-bar {
+    view-transition-name: top-bar;
+}
+@theme inline {
+  --color-destructive-foreground: var(--destructive-foreground);
+}
+
+:root {
+  --destructive-foreground: oklch(0.505 0.213 27.518);
+}
+
+.dark {
+  --destructive-foreground: oklch(0.704 0.191 22.216);
+}

@@ -1,0 +1,9 @@
+import { Language } from '@fluxly/constants';
+import messages from '../messages/en.json';
+
+declare module 'next-intl' {
+    interface AppConfig {
+        Locale: Language;
+        Messages: typeof messages;
+    }
+}

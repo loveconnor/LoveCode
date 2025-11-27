@@ -1,0 +1,25 @@
+{
+    "name": "@fluxly/web",
+    "module": "index.ts",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "dev": "bun --filter '@fluxly/web-client' --filter '@fluxly/web-preload' dev",
+        "dev:client": "bun --filter @fluxly/web-client dev",
+        "dev:server": "bun --filter @fluxly/web-server dev",
+        "dev:preload": "bun --filter @fluxly/web-preload dev",
+        "build:client": "bun --filter @fluxly/web-client build",
+        "start:client": "bun --filter @fluxly/web-client start",
+        "docker:up": "docker compose up",
+        "docker:build": "docker compose build",
+        "docker:down": "docker compose down",
+        "docker:restart": "docker compose down && docker compose up"
+    },
+    "devDependencies": {
+        "@types/bun": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    },
+    "dependencies": {}
+}

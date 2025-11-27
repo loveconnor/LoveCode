@@ -1,0 +1,6 @@
+{
+    "name": "@fluxly/typescript",
+    "description": "The Fluxly TypeScript Configuration",
+    "version": "0.0.0",
+    "private": true
+}
