@@ -16,12 +16,6 @@ export default function LoginPage() {
     return (
         <div className="flex h-screen w-screen items-center justify-center relative">
             <div className="flex flex-col items-center w-full max-w-md p-8 space-y-8">
-                <div className="flex items-center space-x-2">
-                    <Link href={Routes.HOME} className="flex items-center gap-2 hover:opacity-80 transition-opacity font-medium">
-                        <Icons.FluxlyLogo className="w-6 h-6" />
-                        <span>Fluxly</span>
-                    </Link>
-                </div>
                 <div className="space-y-8 w-full text-center">
                     <div className="space-y-4">
                         <h1 className="text-3xl font-semibold leading-tight">
@@ -47,7 +41,7 @@ export default function LoginPage() {
                             providerName="Google"
                         />
                     </div>
-                    <p className="text-xs text-muted-foreground">
+                   {/* <p className="text-xs text-muted-foreground">
                         {t(transKeys.welcome.terms.agreement)}{' '}
                         <Link
                             href="https://fluxly.com/privacy-policy"
@@ -66,6 +60,7 @@ export default function LoginPage() {
                             {t(transKeys.welcome.terms.tos)}
                         </Link>
                     </p>
+                    */}
                 </div>
             </div>
             <div className="absolute bottom-8 text-xs text-muted-foreground">

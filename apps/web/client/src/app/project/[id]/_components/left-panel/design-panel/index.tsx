@@ -46,11 +46,11 @@ const tabs: {
             icon: <Icons.Image className="w-5 h-5" />,
             label: transKeys.editor.panels.layers.tabs.images,
         },
-        {
+        /*{
             value: LeftPanelTabValue.BRANCHES,
             icon: <Icons.Branch className="w-5 h-5" />,
             label: transKeys.editor.panels.layers.tabs.branches,
-        },
+        },*/
     ];
 
 export const DesignPanel = observer(() => {

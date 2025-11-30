@@ -44,12 +44,7 @@ export const LoginButton = ({
         <div className={cn('flex flex-col items-center w-full', className)}>
             <Button
                 variant="outline"
-                className={cn(
-                    'w-full items-center justify-center text-active text-small',
-                    isLastSignInMethod
-                        ? 'bg-teal-100 dark:bg-teal-950 border-teal-300 dark:border-teal-700 text-teal-900 dark:text-teal-100 text-small hover:bg-teal-200/50 dark:hover:bg-teal-800 hover:border-teal-500/70 dark:hover:border-teal-500'
-                        : 'bg-background-fluxly',
-                )}
+                className="w-full items-center justify-center text-active text-small bg-background-fluxly"
                 onClick={handleLoginClick}
                 disabled={!!signingInMethod}
             >
@@ -58,11 +53,8 @@ export const LoginButton = ({
                 ) : (
                     icon
                 )}
-{t(transKeys.welcome.login[translationKey])}
+                {t(transKeys.welcome.login[translationKey])}
             </Button>
-            {isLastSignInMethod && (
-                <p className="text-teal-500 text-small mt-1">{t(transKeys.welcome.login.lastUsed)}</p>
-            )}
         </div>
     );
 };
